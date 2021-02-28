@@ -1,72 +1,7 @@
-<<!DOCTYPE html>
-<html lang="en">
-<!-- Video player from W3schools -->
-<head>
-<title>Vici Kid</title>
-<style>
-        body {
-            background: black;
-        }
-        #video {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 50%;
-            min-height: 50%;
-            margin: auto;
-            transform: translateX(calc((100% - 100vw) / 2));
-        }
-        .content {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.3);
-            color: #f1f1f1;
-            width: 100%;
-            padding: 20px;
-            margin: 0;
-        }
-
-        #myBtn {
-            width: 200px;
-            font-size: 18px;
-            padding: 10px;
-            border: none;
-            background: #000;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        #myBtn:hover {
-            background: #ddd;
-            color: black;
-        }
-    </style>
-</head>
-<body>
-    <video autoplay loop id="video">
-        <source src="/files/vicikid.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <div class="content">
-        <h1>Vici Kid</h1>
-        <p>Vici kid: A trademark for high quality chrome-tanned kidskin with a soap and oil finish, developed by Robert Foederer in Philadelphia in the mid-1880s.</p>
-        <button id="myBtn" onclick="myFunction()">Play</button>
-        </div>
-        
-        <script>
-        var video = document.getElementById("video");
-        var btn = document.getElementById("myBtn");
-        
-        function myFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
-        }
-        }
-        </script>
-</body>
-</html>
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Vici Kid | Derek Richline</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon type=image/png href=/images/favicon.png><link rel=preconnect href=https://fonts.gstatic.com><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tinos&display=swap" rel=stylesheet><link href=/css/index.css rel=stylesheet></head><body id=top><header><a href=https://derekrichline.net/><span id=title>Derek Richline</span></a><br><span id=subtitle>“Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another.”<br>― Carl Sagan, Cosmos</span></header><nav><div id=navbar><label for=nav-toggle id=nav-button><img src=/images/nav-toggle.svg></label>
+<input id=nav-toggle type=checkbox>
+<a class=logo href=/>Home</a>
+<a href=/pages>Pages</a>
+<a href=/about>About</a>
+<a href=/contact>Contact</a></div></nav><main><div class=content><section><h1>Vici Kid</h1><p><em>Vici Kid</em>: A trademark for high quality chrome-tanned kidskin with a soap and oil finish, developed by Robert Foederer in Philadelphia in the mid-1880s.</p><video autostart=false controls>
+<source src=/files/vicikid.mp4></source>Your browser does not support the video tag.</video></section></div></main><footer><span>&copy;2018-2021 Derek Richline </span><a rel=license href=http://creativecommons.org/licenses/by/4.0/><img alt="Creative Commons License" style=border-width:0 src=https://i.creativecommons.org/l/by/4.0/80x15.png></a><br><span>Served with care.</span></footer></body></html>
